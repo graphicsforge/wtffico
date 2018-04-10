@@ -1,0 +1,101 @@
+
+.header {
+  display: flex;
+  background-color: #013f5e;
+  justify-content: space-between;
+  .logo {
+    height: 30px;
+    margin: 10px;
+  }
+  .character_select {
+    width: auto;
+    max-width: 500px;
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+  }
+}
+.ui.dropdown .menu>.item>.image {
+  height: 2em;
+  width: 2em;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+h2 {
+  text-align: center;
+}
+
+.fico-score {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .current, .historical {
+    .recharts-wrapper {
+      margin: auto;
+    }
+  }
+  .historical svg {
+    position: relative;
+    left: -25px;
+  }
+}
+
+.fico-suggestions {
+  width: 100%;
+  .card {
+    border-radius: 10px;
+    border: solid 2px #555;
+    margin: 20px 0;
+    padding: 10px;
+    .title {
+      img {
+        height: 20px;
+      }
+      span {
+        font-weight: bold;
+        font-size: 15px;
+        position: relative;
+        left: 5px;
+        bottom: 5px;
+      }
+    }
+    &.positive {
+      border-color: #496;
+    }
+    &.negative {
+      border-color: #883334;
+    }
+    .suggestions > div {
+      background-color: #eee;
+      padding: 5px;
+      margin-top: 5px;
+      img {
+        height: 15px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+
+.fico-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+@media (min-width: 900px) {
+  .fico-container {
+    .fico-score {
+      width: 450px;
+    }
+
+    .fico-suggestions {
+      width: 450px;
+      flex-grow: 1;
+    }
+  }
+}

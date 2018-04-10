@@ -1,0 +1,31 @@
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta httpequiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WTFFICO: a credit score explainer</title>
+    <meta property="og:title" content="WTFFICO: a credit score explainer">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="/semantic.min.css">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <script src="/wtffico.js"></script>
+  </head>
+
+  <body>
+    <wtffico></wtffico>
+
+    <script>
+      var wtffico = require("wtffico");
+      var React = wtffico.React;
+      var ReactDOM = wtffico.ReactDOM;
+      window.onload = () => {
+        ReactDOM.render(
+          React.createElement(wtffico, {}),
+          document.querySelector("wtffico")
+        );
+      }
+    </script>
+  </body>
+</html>

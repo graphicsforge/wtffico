@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  background-color: #013f5e;
+  justify-content: space-between;
+}
+.header .logo {
+  height: 30px;
+  margin: 10px;
+}
+.header .character_select {
+  width: auto;
+  max-width: 500px;
+  background-color: #555;
+  color: #fff;
+  padding: 10px;
+}
+.ui.dropdown .menu > .item > .image {
+  height: 2em;
+  width: 2em;
+}
+h1 {
+  margin-bottom: 0px;
+}
+h2 {
+  text-align: center;
+}
+.fico-score {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.fico-score .current .recharts-wrapper,
+.fico-score .historical .recharts-wrapper {
+  margin: auto;
+}
+.fico-score .historical svg {
+  position: relative;
+  left: -25px;
+}
+.fico-suggestions {
+  width: 100%;
+}
+.fico-suggestions .card {
+  border-radius: 10px;
+  border: solid 2px #555;
+  margin: 20px 0;
+  padding: 10px;
+}
+.fico-suggestions .card .title img {
+  height: 20px;
+}
+.fico-suggestions .card .title span {
+  font-weight: bold;
+  font-size: 15px;
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+}
+.fico-suggestions .card.positive {
+  border-color: #496;
+}
+.fico-suggestions .card.negative {
+  border-color: #883334;
+}
+.fico-suggestions .card .suggestions > div {
+  background-color: #eee;
+  padding: 5px;
+  margin-top: 5px;
+}
+.fico-suggestions .card .suggestions > div img {
+  height: 15px;
+  position: relative;
+  top: 2px;
+}
+.fico-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+@media (min-width: 900px) {
+  .fico-container .fico-score {
+    width: 450px;
+  }
+  .fico-container .fico-suggestions {
+    width: 450px;
+    flex-grow: 1;
+  }
+}
