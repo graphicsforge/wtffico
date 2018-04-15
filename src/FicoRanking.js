@@ -17,7 +17,7 @@ class FicoRanking {
     // cap to 0 if below of the range of scores we have values for
     if (score <= keyframes[0].score) return 0;
     // find closest 2 keyframes for linear interpolate
-    for (let i = 0; i < keyframes.length - 2; i += 1) {
+    for (let i = 0; i < keyframes.length - 1; i += 1) {
       if (score < keyframes[i + 1].score) {
         // linear interpolation
         const scoreDiff = keyframes[i + 1].score - keyframes[i].score;

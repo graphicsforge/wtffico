@@ -4,7 +4,8 @@
     "build": "npm run build_js && npm run build_styles",
     "build_js": "mkdir -p dist && ./node_modules/browserify/bin/cmd.js -t [ babelify --presets [ react es2015 ] ] -r ./src/index.jsx:wtffico -o dist/wtffico.js",
     "build_styles": "./node_modules/less/bin/lessc src/styles.less dist/styles.css",
-    "lint": "./node_modules/eslint/bin/eslint.js src/*.js*"
+    "lint": "./node_modules/eslint/bin/eslint.js src/*.js*",
+    "test": "mocha"
   },
   "dependencies": {
     "browserify": "^14.4.0",
@@ -22,6 +23,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-react": "^7.7.0",
-    "less": "^3.0.1"
+    "less": "^3.0.1",
+    "mocha": "^5.1.0"
   }
 }

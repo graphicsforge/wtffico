@@ -19,7 +19,7 @@ const keyVariables = {
     threshold: 2,
     thresholdDirection: '<',
     impactPositive: 'Your multiple lines of credit shows that you are trusted by multiple institutions.',
-    impactNegative: 'You don\'t have many lines of credit with wich to build your credit score.',
+    impactNegative: 'You don\'t have many lines of credit with which to build your credit score.',
     suggestedActions: [
       'Take out a credit card or an additional line of credit now, so that future you will have multiple accounts with a long credit history. Having different types of credit will also help.',
     ],
